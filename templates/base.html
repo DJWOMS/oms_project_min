@@ -1,0 +1,25 @@
+<!-- Подключение базового шаблона -->
+{% extends 'super-base.html' %}
+<!-- Для подключение деректории static -->
+{% load staticfiles %}
+<!-- Meta данные -->
+{% block seo %}
+{% endblock seo %}
+{#{% block description %}{% endblock description %}#}
+{#{% block title %}{% endblock title %}#}
+
+<meta name="author" content="">
+<!-- Подключение стилей -->
+{% block style %}
+
+{% endblock style %}
+<!-- Тег body -->
+{% block body %}
+        {% block content %}
+            <!-- Контент который будет меняться на страницах -->
+        {% endblock content %}
+{% endblock body %}
+<!-- Подключение js и т.д. -->
+{% block scripts %}
+
+{% endblock scripts %}
